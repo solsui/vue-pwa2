@@ -1,3 +1,4 @@
+console.log('called myPush.js')
 self.addEventListener("push", function(event) {
     event.waitUntil(
       self.registration.pushManager.getSubscription()
