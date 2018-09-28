@@ -9,6 +9,7 @@ self.addEventListener("push", function(event) {
       })
       .then(function(res) {
 
+        console.log("push event", res)
         return self.registration.showNotification('subject', {
           body: 'body'
         })
