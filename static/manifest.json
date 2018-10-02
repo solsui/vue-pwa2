@@ -1,6 +1,6 @@
 {
-  "name": "vue-pwa2",
-  "short_name": "vue-pwa2",
+  "name": "Prototype of my portal",
+  "short_name": "MyPortal",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",
