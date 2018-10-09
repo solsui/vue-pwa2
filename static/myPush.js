@@ -10,9 +10,27 @@ self.addEventListener("push", function(event) {
       .then(function(res) {
 
         console.log("push event", res)
-        return self.registration.showNotification('subject', {
+        return self.registration.showNotification('title', {
           body: 'body'
         })
       })
     )
 })
+/*
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close()
+
+  var url = "/"
+  if (event.notification.data.url) {
+    url = event.notification.data.url
+  }
+
+  event.waitUntil(
+    clients.matchAll({type: 'window'}).then(function() {
+      if(clients.openWindow) {
+        return clients.openWindow(url)
+      }
+    })
+  )
+})
+*/
